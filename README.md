@@ -3,14 +3,15 @@ This repository contains automation tests for UI, Selenium Grid setup, and MySQL
 
 ## Prerequisites
 - Docker & Docker Compose installed
-- Java JDK 8+ installed
+- Java JDK 11 correto installed
 - Maven installed
+- GIT
 
 ## Setup Steps
 
 ### 1. Clone the Repository
 ```
-git clone <repository_url>
+git clone <https://github.com/mbewu11/roomraccoonuiautomation.git>
 ```
 
 ### 2. Start Selenium Grid
