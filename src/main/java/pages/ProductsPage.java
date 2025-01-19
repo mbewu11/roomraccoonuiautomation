@@ -9,12 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 public class ProductsPage extends BasePage {
-    @FindBy(css = ".inventory_item button")
-    WebElement addToCart;
-
-    @FindBy(id = "shopping_cart_container")
-    WebElement updateCartButton;
-
+    private final By addToCartButtons = By.cssSelector(".inventory_item button");
+    private final By cartIcon = By.id("shopping_cart_container");
 
     public ProductsPage(WebDriver driver) {
         super(driver);
@@ -22,13 +18,13 @@ public class ProductsPage extends BasePage {
 
     @Step
     public void addItemsToCart() {
-        List<WebElement> items = driver.findElements((By) addToCart);
+        List<WebElement> items = driver.findElements(addToCartButtons);
         for (WebElement item : items) {
             item.click();
         }
     }
 
     public void goToCart() {
-        driver.findElement((By) updateCartButton).click();
+        driver.findElement(cartIcon).click();
     }
 }

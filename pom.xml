@@ -28,7 +28,7 @@
         <talk2grid.version>1.2.1</talk2grid.version>
         <testng.version>7.8.0</testng.version>
         <versions-maven-plugin.version>2.16.0</versions-maven-plugin.version>
-        <webdrivermanager.version>5.7.0</webdrivermanager.version>
+        <webdrivermanager.version>5.9.2</webdrivermanager.version>
         <woodstox.version>6.4.0</woodstox.version>
     </properties>
 
@@ -262,7 +262,7 @@
         <dependency>
             <groupId>org.xmlunit</groupId>
             <artifactId>xmlunit-core</artifactId>
-            <version>2.9.1</version>
+            <version>2.10.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -300,7 +300,7 @@
         <dependency>
             <groupId>xalan</groupId>
             <artifactId>xalan</artifactId>
-            <version>2.7.2</version>
+            <version>2.7.3</version>
             <scope>test</scope>
         </dependency>
         <dependency>

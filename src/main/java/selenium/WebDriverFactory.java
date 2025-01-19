@@ -21,7 +21,7 @@ import java.net.URL;
 import static io.qameta.allure.Allure.step;
 
 public class WebDriverFactory {
-    private static final String REMOTEHUB_URL = "";
+    private static final String REMOTEHUB_URL = "http://localhost:4444/wd/hub";
 
     public static WebDriver createWebDriver() {
         String driverName = System.getProperty("driver", "");

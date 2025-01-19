@@ -37,6 +37,7 @@ public class CheckOutPage extends BasePage {
 
     @Step
     public void fillInBillingDetails(String fName, String lName, String postal) {
+        checkoutButton.click();
         setValue(firstName, fName);
         setValue(lastName, lName);
         setValue(postalCode, postal);
